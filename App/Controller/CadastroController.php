@@ -12,16 +12,20 @@ class CadastroController
 
     public static function listar()
     {
-        include './App/View/modules/Cadastro/ListaCadastro.php';
+        include './App/Model/CadastroModel.php';
+
+        $model = new CadastroModel();
+        $model->getAllRows();
+
+        include './App/View/modules/Cadastro/ListarCadastro.php';
     }
 
     public static function save()
     {
-        include '../Model/CadastroModel.php';
+        include './App/Model/CadastroModel.php';
 
         $model = new CadastroModel();
 
-        $model->id =  $_POST['id'];
         $model->nome = $_POST['nome'];
         $model->email = $_POST['email'];
         $model->senha = $_POST['senha'];
@@ -29,6 +33,6 @@ class CadastroController
 
         $model->save();
 
-        header("Location: /desafioBitcoin/App/cadastro");
+        header("Location: /desafioBitcoin/App/listar");
     }
 }

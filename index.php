@@ -6,23 +6,18 @@ $url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
 switch ($url) {
     case '/desafioBitcoin/':
-        echo "Inicio";
-        break;
-
-    case '/desafioBitcoin/App/cadastro':
         CadastroController::index();
         break;
 
-    case '/desafioBitcoin/App/cadastro/form':
+    case '/desafioBitcoin/App/':
         CadastroController::index();
         break;
 
-    case '/desafioBitcoin/App/cadastro/lista':
+    case '/desafioBitcoin/App/listar':
         CadastroController::listar();
         break;
 
-    case '/desafioBitcoin/App/cadastro/form/save':
-        echo "save";
+    case '/desafioBitcoin/App/save':
         CadastroController::save();
         break;
 
