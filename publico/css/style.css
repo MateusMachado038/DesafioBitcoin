@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Rubik&display=swap");
+
+header {
+  font-size: 12px;
+  font-weight: bold;
+}
+header #navItem {
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+}
+header #navItem:hover {
+  color: #b9b9b9;
+}
+
+.logo {
+  font-family: "Rubik", sans-serif;
+  color: white;
+}
+
+.logo2 {
+  font-family: "Lobster", cursive;
+  font-size: 25px;
+  color: rgb(0, 81, 255);
+}
+
+.titlePadding {
+  padding-top: 10%;
+  color: white;
+}
+
+.containerMain {
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  background-image: url(http://localhost/desafioBitcoin/publico/images/bitcoinWp.jpg);
+}
+
+.formContainer {
+  background-image: url(http://localhost/desafioBitcoin/publico/images/bgBitcoin.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-attachment: fixed; */
+  padding: 40px;
+}
+
+.formCad {
+  min-height: 100vh;
+  width: 70%;
+  background-color: #353333;
+  box-shadow: 0 8px 34px -16px rgba(45, 113, 214, 0.5);
+  border-radius: 10px 10%;
+  color: white;
+  opacity: 0.92;
+}
+
+.footer {
+  background-color: black;
+  height: 25vh;
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+}
+.footer a:hover {
+  color: #b9b9b9;
+}
+.footer .copyOBC {
+  color: #555252;
+}
