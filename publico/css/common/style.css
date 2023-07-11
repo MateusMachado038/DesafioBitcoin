@@ -40,25 +40,6 @@ header #navItem:hover {
   background-image: url(http://localhost/desafioBitcoin/publico/images/bitcoinWp.jpg);
 }
 
-.formContainer {
-  background-image: url(http://localhost/desafioBitcoin/publico/images/bgBitcoin.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  /* background-attachment: fixed; */
-  padding: 40px;
-}
-
-.formCad {
-  min-height: 100vh;
-  width: 70%;
-  background-color: #353333;
-  box-shadow: 0 8px 34px -16px rgba(45, 113, 214, 0.5);
-  border-radius: 10px 10%;
-  color: white;
-  opacity: 0.92;
-}
-
 .footer {
   background-color: black;
   height: 25vh;

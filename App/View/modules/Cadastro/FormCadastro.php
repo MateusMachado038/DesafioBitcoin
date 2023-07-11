@@ -7,7 +7,9 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="http://localhost/desafioBitcoin/publico/css/style.css">
+    <link rel="stylesheet" href="http://localhost/desafioBitcoin/publico/css/common/style.css">
+    <link rel="stylesheet" href="http://localhost/desafioBitcoin/publico/css/pages/formCad.css">
+    <script src="http://localhost/desafioBitcoin/publico/js/formCad.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -17,58 +19,6 @@
 </head>
 
 <body>
-
-    <style>
-        input[type="text"] {
-            width: 100%;
-            border: 2px solid #aaa;
-            border-radius: 4px;
-            margin: 8px 0;
-            outline: none;
-            padding: 8px;
-            box-sizing: border-box;
-            transition: 0.3s;
-        }
-
-        input[type="text"]:focus {
-            border-color: dodgerBlue;
-            box-shadow: 0 0 8px 0 dodgerBlue;
-        }
-
-        .inputWithIcon input[type="text"] {
-            padding-left: 40px;
-        }
-
-        .inputWithIcon {
-            position: relative;
-        }
-
-        .inputWithIcon i {
-            position: absolute;
-            left: 0;
-            top: 15px;
-            padding: 9px 8px;
-            color: #1f1e1e;
-            transition: 0.3s;
-        }
-
-        .inputWithIcon input[type="text"]:focus+i {
-            color: dodgerBlue;
-        }
-
-        .inputWithIcon.inputIconBg i {
-            background-color: #aaa;
-            color: #fff;
-            padding: 9px 4px;
-            border-radius: 4px 0 0 4px;
-        }
-
-        .inputWithIcon.inputIconBg input[type="text"]:focus+i {
-            color: #fff;
-            background-color: dodgerBlue;
-        }
-    </style>
-
 
     <header>
         <div class="container-fluid containerMain">
@@ -147,42 +97,6 @@
         <a href="" class="me-4">YouTube</a>
         <a href="">Twitter</a>
     </footer>
-
-
-
-    <script>
-        async function getBitCoin() {
-            const response = await fetch('https://api.coincap.io/v2/assets/bitcoin');
-            const bitcoinValue = await response.json().then(corpo => {
-
-                const contactSection = document.getElementById('divTal')
-
-
-                const valorInp = document.createElement('input')
-                const bitCoinPrice = parseFloat(corpo.data.priceUsd).toFixed(2)
-
-                valorInp.value = parseFloat(bitCoinPrice).toLocaleString('pt-br', {
-                    style: 'currency',
-                    currency: 'BRL'
-                });
-                valorInp.type = "text"
-                valorInp.name = "valorBC"
-                valorInp.className = "form-control"
-                valorInp.disabled = "true";
-
-                const iconBit = document.createElement('i')
-                iconBit.className = "fa-brands fa-bitcoin fa-lg fa-fw"
-                iconBit.ariaHidden = "true";
-
-
-                contactSection.append(valorInp, iconBit)
-
-
-                console.log(corpo.data.priceUsd)
-            });
-        }
-        getBitCoin()
-    </script>
 
     <!-- Lib text script -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
