@@ -10,6 +10,7 @@ header #navItem {
   text-decoration: none;
   color: white;
   margin-left: 20px;
+  font-size: 13px;
 }
 header #navItem:hover {
   color: #b9b9b9;
@@ -36,8 +37,6 @@ header #navItem:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
-  background-image: url(http://localhost/desafioBitcoin/publico/images/bitcoinWp.jpg);
 }
 
 .footer {

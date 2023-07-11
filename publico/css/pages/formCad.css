@@ -1,3 +1,7 @@
+.containerMain {
+  background-image: url(http://localhost/desafioBitcoin/publico/images/bitcoinWp.jpg);
+}
+
 .formContainer {
   background-image: url(http://localhost/desafioBitcoin/publico/images/bgBitcoin.jpg);
   background-size: cover;

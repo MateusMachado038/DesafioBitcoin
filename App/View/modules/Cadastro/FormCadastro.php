@@ -20,12 +20,13 @@
 
 <body>
 
+
     <header>
         <div class="container-fluid containerMain">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-dark bg-transparent pt-4">
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="/index.html">
+                        <a class="navbar-brand" href="/desafioBitcoin/App/">
                             <span class="logo">Mac <span class="logo2">Coin</span></span>
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,13 +35,17 @@
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="" id="navItem">Cadastrar</a>
+                                    <a class="nav-link active" aria-current="page" href="/desafioBitcoin/App/" id="navItem">Cadastrar</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="" id="navItem">Listar Cadastros</a>
+                                    <a class="nav-link active" href="/desafioBitcoin/App/listar" id="navItem">Listar Cadastros</a>
                                 </li>
                             </ul>
+
                         </div>
+                        <form class="form-inline my-2 my-lg-0 d-none d-lg-block">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                        </form>
                     </div>
                 </nav>
 
@@ -92,10 +97,10 @@
     </section>
 
     <footer class="container-fluid footer">
-        <span class="me-5 copyOBC"> &copy; 2021</span>
-        <a href="" target="blank" class="me-4">Instagram</a>
-        <a href="" class="me-4">YouTube</a>
-        <a href="">Twitter</a>
+        <span class="me-5 copyOBC"> &copy; 2023</span>
+        <a href="" target="blank" class="me-4">Instagram <i class="fa-brands fa-instagram" style="color: #ff0505;"></i></a>
+        <a href="" class="me-4">YouTube <i class="fa-brands fa-youtube" style="color: #ff0000;"></i></a>
+        <a href="">Twitter <i class="fa-brands fa-twitter" style="color: #2695fd;"></i></a>
     </footer>
 
     <!-- Lib text script -->
