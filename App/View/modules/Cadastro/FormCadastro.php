@@ -4,13 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mac Coin - Home</title>
+    <link rel="shortcut icon" href="http://localhost/desafioBitcoin/publico/images/bitcoinIcon.png" type="image/x-icon">
+
+    <!-- CDN Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="http://localhost/desafioBitcoin/publico/css/common/style.css">
-    <link rel="stylesheet" href="http://localhost/desafioBitcoin/publico/css/pages/formCad.css">
-    <script src="http://localhost/desafioBitcoin/publico/js/formCad.js"></script>
 
+    <!-- arquivos css -->
+    <link rel="stylesheet" href="http://localhost/desafioBitcoin/publico/css/common/style.css">
+    <link rel="stylesheet" href="http://localhost/desafioBitcoin/publico/css/pages/form/formCad.css">
+
+    <!-- CDN Font-Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Lib text  -->
@@ -19,8 +24,6 @@
 </head>
 
 <body>
-
-
     <header>
         <div class="container-fluid containerMain">
             <div class="container">
@@ -51,9 +54,9 @@
 
             </div>
             <div class="container titlePadding" data-aos="fade-right" data-aos-duration="1000">
-                <p class="h5" id="lauchComing">Lorem ipsum dolor sit.</p>
+                <p class="h5" id="carouselTitle"> Transações financeiras ponto a ponto</p>
 
-                <p class="h1">Lorem, ipsum.</p>
+                <p class="h1">Livre e descentralizada</p>
 
                 <button type="button" class="btn btn-outline-light mt-5" id="button">SAIBA MAIS</button>
 
@@ -61,25 +64,28 @@
         </div>
     </header>
 
-    <section class="formContainer">
+    <section class="sectionMain">
         <div class="container formCad" data-aos="flip-up" data-aos-duration="2000">
             <div class="row">
                 <div class="col mt-5">
                     <h1>Cadastro</h1>
-                    <form method="post" action="/desafioBitcoin/App/save">
+                    <form id="form" method="post" action="/desafioBitcoin/App/save">
                         <div class="inputWithIcon">
                             <input type="text" placeholder="Nome" class="form-control" name="nome" id="nome">
                             <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+                            <span id="name-error"></span>
                         </div>
 
                         <div class="inputWithIcon">
                             <input type="text" placeholder="Email" class="form-control" id="email" name="email">
                             <i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i>
+                            <span id="email-error"></span>
                         </div>
 
                         <div class="inputWithIcon">
                             <input type="text" placeholder="Senha" class="form-control" id="senha" name="senha">
                             <i class="fa-solid fa-lock fa-lg fa-fw" aria-hidden="true"></i>
+                            <span id="password-error"></span>
                         </div>
 
                         <div class="inputWithIcon">
@@ -108,6 +114,9 @@
     <script>
         AOS.init();
     </script>
+
+    <script src="http://localhost/desafioBitcoin/publico/js/form/formCad.js"></script>
+    <script src="http://localhost/desafioBitcoin/publico/js/form/validForm.js"></script>
 </body>
 
 </html>

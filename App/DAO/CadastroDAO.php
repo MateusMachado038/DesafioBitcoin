@@ -10,7 +10,9 @@ class CadastroDAO
         $this->conexao = new PDO($dsn, 'root', '');
     }
 
-
+    /**
+     * Método que recebe um model e extrai os dados do model para realizar o insert
+     */
     public function insert(CadastroModel $model)
     {
         $sql = "INSERT INTO dt_cadastro (nome, email, senha, valorBC) VALUES (?, ?, ?, ?) ";
@@ -24,6 +26,9 @@ class CadastroDAO
         $stmt->execute();
     }
 
+    /**
+     * Método que retorna todas os registros da tabela pessoa no banco de dados.
+     */
     public function select()
     {
         $sql = "SELECT * FROM dt_cadastro";

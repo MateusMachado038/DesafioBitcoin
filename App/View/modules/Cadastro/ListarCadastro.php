@@ -4,13 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mac Coin - Lista</title>
+    <link rel="shortcut icon" href="http://localhost/desafioBitcoin/publico/images/bitcoinIcon.png" type="image/x-icon">
+
+    <!-- CDN Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="http://localhost/desafioBitcoin/publico/css/common/style.css">
-    <link rel="stylesheet" href="http://localhost/desafioBitcoin/publico/css/pages/listarCad.css">
-    <script src="http://localhost/desafioBitcoin/publico/js/listarCad.js"></script>
 
+    <!-- arquivos css e js-->
+    <link rel="stylesheet" href="http://localhost/desafioBitcoin/publico/css/common/style.css">
+    <link rel="stylesheet" href="http://localhost/desafioBitcoin/publico/css/pages/listar/listarCad.css">
+    <script defer src="http://localhost/desafioBitcoin/publico/js/listar/listarCad.js"></script>
+
+    <!-- CDN Font-Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Lib text  -->
@@ -50,9 +56,9 @@
 
             </div>
             <div class="container titlePadding" data-aos="fade-right" data-aos-duration="1000">
-                <p class="h5" id="lauchComing">Lorem ipsum dolor sit.</p>
+                <p class="h5" id="lauchComing"> Transações financeiras ponto a ponto</p>
 
-                <p class="h1">Lorem, ipsum.</p>
+                <p class="h1">Livre e descentralizada</p>
 
                 <button type="button" class="btn btn-outline-light mt-5" id="button">SAIBA MAIS</button>
 
@@ -60,13 +66,14 @@
         </div>
     </header>
 
-    <section class="listContainer">
+    <section class="sectionMain">
         <div class="container listCad" data-aos="flip-up" data-aos-duration="2000">
             <table class='table table-hover table-striped table-bordered table-dark'>
                 <tr>
                     <th>Id</th>
                     <th>Nome</th>
                     <th>Email</th>
+                    <th>Senha</th>
                     <th>Bc</th>
                 </tr>
 
@@ -76,6 +83,7 @@
                         <td><?= $item->id ?></td>
                         <td><?= $item->nome ?></td>
                         <td><?= $item->email ?></td>
+                        <td><?= $item->senha ?></td>
                         <td><?= $item->valorBC ?></td>
                     </tr>
                 <?php endforeach ?>

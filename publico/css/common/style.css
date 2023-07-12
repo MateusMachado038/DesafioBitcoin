@@ -39,6 +39,14 @@ header #navItem:hover {
   background-position: center;
 }
 
+.sectionMain {
+  background-image: url(http://localhost/desafioBitcoin/publico/images/bgBitcoin.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 40px;
+}
+
 .footer {
   background-color: black;
   height: 25vh;
@@ -58,4 +66,20 @@ header #navItem:hover {
 }
 .footer .copyOBC {
   color: #555252;
+}
+
+@media (max-width: 600px) {
+  .titlePadding {
+    font-size: 20px;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer a {
+    text-decoration: none;
+    color: white;
+    padding-top: 5px;
+  }
 }

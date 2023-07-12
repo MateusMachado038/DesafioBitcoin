@@ -2,14 +2,6 @@
   background-image: url(http://localhost/desafioBitcoin/publico/images/bitcoinWp.jpg);
 }
 
-.formContainer {
-  background-image: url(http://localhost/desafioBitcoin/publico/images/bgBitcoin.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 40px;
-}
-
 .formCad {
   min-height: 100vh;
   width: 70%;
@@ -23,7 +15,6 @@
 
 input[type="text"] {
   width: 100%;
-  border: 2px solid #aaa;
   border-radius: 4px;
   margin: 8px 0;
   outline: none;
@@ -69,4 +60,17 @@ input[type="text"]:focus {
 .inputWithIcon.inputIconBg input[type="text"]:focus + i {
   color: #fff;
   background-color: dodgerBlue;
+}
+
+span {
+  color: #f3555a;
+  font-size: 1rem;
+  margin: 0.25rem;
+}
+
+.error {
+  border: 2px solid #f64348;
+}
+.success {
+  border: 2px solid #43f67f;
 }

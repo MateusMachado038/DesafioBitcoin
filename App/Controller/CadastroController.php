@@ -4,7 +4,9 @@
 
 class CadastroController
 {
-
+    /**
+     * Devolve uma View contendo um formulário para o usuário.
+     */
     public static function index()
     {
         include './App/View/modules/Cadastro/FormCadastro.php';
@@ -20,6 +22,9 @@ class CadastroController
         include './App/View/modules/Cadastro/ListarCadastro.php';
     }
 
+    /**
+     * Preenche um Model para que seja enviado ao banco de dados para salvar.
+     */
     public static function save()
     {
         include './App/Model/CadastroModel.php';
