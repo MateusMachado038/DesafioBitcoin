@@ -13,7 +13,7 @@
   padding: 60px;
 }
 
-input[type="text"] {
+input {
   width: 100%;
   border-radius: 4px;
   margin: 8px 0;
@@ -23,12 +23,12 @@ input[type="text"] {
   transition: 0.3s;
 }
 
-input[type="text"]:focus {
+input:focus {
   border-color: dodgerBlue;
   box-shadow: 0 0 8px 0 dodgerBlue;
 }
 
-.inputWithIcon input[type="text"] {
+.inputWithIcon input {
   padding-left: 40px;
 }
 
@@ -46,7 +46,7 @@ input[type="text"]:focus {
   transition: 0.3s;
 }
 
-.inputWithIcon input[type="text"]:focus + i {
+.inputWithIcon input:focus + i {
   color: dodgerBlue;
 }
 
@@ -57,7 +57,7 @@ input[type="text"]:focus {
   border-radius: 4px 0 0 4px;
 }
 
-.inputWithIcon.inputIconBg input[type="text"]:focus + i {
+.inputWithIcon.inputIconBg input:focus + i {
   color: #fff;
   background-color: dodgerBlue;
 }

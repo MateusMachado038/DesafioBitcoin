@@ -83,7 +83,7 @@
                         </div>
 
                         <div class="inputWithIcon">
-                            <input type="text" placeholder="Senha" class="form-control" id="senha" name="senha">
+                            <input type="password" placeholder="Senha" class="form-control" id="senha" name="senha">
                             <i class="fa-solid fa-lock fa-lg fa-fw" aria-hidden="true"></i>
                             <span id="password-error"></span>
                         </div>

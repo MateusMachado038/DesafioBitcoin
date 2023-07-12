@@ -70,7 +70,6 @@
         <div class="container listCad" data-aos="flip-up" data-aos-duration="2000">
             <table class='table table-hover table-striped table-bordered table-dark'>
                 <tr>
-                    <th>Id</th>
                     <th>Nome</th>
                     <th>Email</th>
                     <th>Senha</th>
@@ -80,7 +79,6 @@
                 <?php foreach ($model->rows as $item) : ?>
                     <tr>
 
-                        <td><?= $item->id ?></td>
                         <td><?= $item->nome ?></td>
                         <td><?= $item->email ?></td>
                         <td><?= $item->senha ?></td>
